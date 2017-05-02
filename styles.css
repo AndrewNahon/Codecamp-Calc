@@ -1,0 +1,47 @@
+body {
+  padding-top: 15%;
+  background:  #fefcff;
+  font-size: 12px;
+}
+
+#shell {
+  background: #fff;
+  border-radius: 3%;
+  border: 2px solid #b6b6b4;
+  margin: 0 auto;
+  padding: 25px 10px 5px 10px;
+  width: 300px;
+}
+
+#inputDisp {
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 1px;
+  padding-right: 5px;
+  font-size: 1.5em;
+}
+
+.prevAnswer {
+  padding: 0 10px 20px 0;
+}
+
+.row + .row {
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+
+.num {
+  background: #fff;
+}
+
+.operator, .sqr, .pi, .percent {
+  background: #b6b6b4;
+  color: 565051;
+}
+
+

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div id='shell' class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <input id="inputDisp" class='form-control' type='text' name='input' onkeypress='return event.charCode>= 48 && event.charCode <= 57'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-12 text-right'>
+          <small class="prevAnswer"></small>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block percent'>
+            %
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num pi'>
+            π
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block sqr'>
+            &#8730;
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-success center-block ac'>
+            AC
+          </button>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            7
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            8
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            9
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block operator'>
+            /
+          </button>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            4
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            5
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            6
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block operator'>
+            x
+          </button>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            1
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            2
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            3
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block operator'>
+            -
+          </button>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-xs-3'>
+          <button id='zero' class='btn btn-default center-block num'>
+            0
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block num'>
+            .
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-primary center-block equals'>
+            =
+          </button>
+        </div>
+        <div class='col-xs-3'>
+          <button class='btn btn-default center-block operator'>
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript"> calc.init()</script>
